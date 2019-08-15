@@ -1,0 +1,22 @@
+<p>
+  registro works!
+</p>
+
+<div>
+  <table>
+    <header>
+      <tr>
+        <th>nombre</th>
+        <th>email</th>
+        <th>edad</th>
+      </tr>
+    </header>
+    <tbody>
+       <tr *ngFor="let u of RestApi, index as i" (click)="seleccionar(i)">
+        <td>{{u.name}}</td>
+        <td>{{u.email}}</td>
+       </tr>
+    </tbody>
+  </table>
+
+</div>

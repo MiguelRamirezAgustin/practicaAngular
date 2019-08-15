@@ -16,6 +16,9 @@ export class RegistroComponent implements OnInit {
     this.userGet();
   }
 
+  demo(){
+    
+  }
 
   userGet(){
     this.servicios.getUser().subscribe(data=>{
